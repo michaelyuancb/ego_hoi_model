@@ -1,0 +1,4 @@
+# ninja log v5
+2	9514	1720772572860266376	/home/ycb/dflowmap_project/dflowmap/dfm/repo/Deformable-DETR/models/ops/build/temp.linux-x86_64-cpython-311/home/ycb/dflowmap_project/dflowmap/dfm/repo/Deformable-DETR/models/ops/src/cpu/ms_deform_attn_cpu.o	fd58312f7d0f2dbc
+2	27207	1720772590552277136	/home/ycb/dflowmap_project/dflowmap/dfm/repo/Deformable-DETR/models/ops/build/temp.linux-x86_64-cpython-311/home/ycb/dflowmap_project/dflowmap/dfm/repo/Deformable-DETR/models/ops/src/vision.o	ebfb22fe60e15339
+2	27640	1720772590992277415	/home/ycb/dflowmap_project/dflowmap/dfm/repo/Deformable-DETR/models/ops/build/temp.linux-x86_64-cpython-311/home/ycb/dflowmap_project/dflowmap/dfm/repo/Deformable-DETR/models/ops/src/cuda/ms_deform_attn_cuda.o	870ada69918eea2f
