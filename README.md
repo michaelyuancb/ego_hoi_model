@@ -26,7 +26,7 @@ my environment: python3.11, CUDA11.7, cudatoolkit11.7, torch=='2.0.1+cu117'.
 
 First use the 100DoH repository I provided in ``ego_hand_detector/`` to install the 100DoH hand-object detector. You can refer to ``ego_hand_detector/README.md``. 
 
-Note that if you used the [original 100DoH repository](https://github.com/ddshan/hand_object_detector), you may meet problems since it only support for low-version CUDA. 
+Note that if you used the [original 100DoH repository](https://github.com/ddshan/hand_object_detector), you may meet problems since it only support for low-version CUDA. Then download ``faster_rcnn_1_8_132028`` from [here](https://drive.google.com/open?id=1H2tWsZkS7tDF8q1-jdjx6V9XrK25EDbE) and put it into ``ego_hand_detector/models/res101_handobj_100K/pascal_voc/``.
 
 ### Installation of Semantic-SAM
 
