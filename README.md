@@ -2,6 +2,22 @@
 
 ![cover](media/cover.png "teaser_pic")
 
+## Updatation (2024.07.14)
+
+I find that [EgoHOS](https://github.com/owenzlz/EgoHOS) produce better hand-object segmentation than [100DoH](https://github.com/ddshan/hand_object_detectorc) + [Semantic-SAM](https://github.com/UX-Decoder/Semantic-SAM) pipeline. I have also provide a wrapper of EgoHOS in ``ego_hos_wrapper.py``.
+
+First install EgoHOS from the official repository, than run the code below for segmentation:
+
+```python
+from ego_hos_wrapper import EgoHOSWrapper
+base_fp = "image.jpg"
+ego_hos_wrapper = EgoHOSWrapper(cache_path="/home/ycb/dflowmap_project/dflowmap/dfm/hoi/cache",  # an absolute file-path for caching
+                                repo_path='../repo')
+seg_hands, seg_obj2, seg_cb = ego_hos_wrapper.segment(image_fp, vis=True)  # "cb" is contact boundary
+```
+
+![cover](media/egohos.png "egohos")
+
 ## Introduction
 
 This repository is a pipeline for hand object interaction (HOI) analysis, which includes: 
@@ -47,7 +63,7 @@ cd ops
 
 ## Egocentric Hand & Object Detection
 
-![detection](media/detection.png "teaser_pic")
+![detection](media/detection.png "detection")
 
 Run the following code as demo:
 
@@ -78,7 +94,7 @@ The visualization result will be saved in ``vis_det.png``. Check out [100DoH](ht
 
 ## Egocentric Hand & Object & Dynamic-Area Segmentation (Conservative)
 
-![segmentation](media/segmentation.png "teaser_pic")
+![segmentation](media/segmentation.png "segmentation")
 
 Run the following code as demo:
 
