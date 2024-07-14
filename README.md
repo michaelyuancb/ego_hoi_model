@@ -4,7 +4,7 @@
 
 ## Updatation (2024.07.14)
 
-I find that [EgoHOS](https://github.com/owenzlz/EgoHOS) produce better hand-object segmentation than [100DoH](https://github.com/ddshan/hand_object_detectorc) + [Semantic-SAM](https://github.com/UX-Decoder/Semantic-SAM) pipeline. I have also provide a wrapper of EgoHOS in ``ego_hos_wrapper.py``.
+I find that [EgoHOS](https://github.com/owenzlz/EgoHOS) produce better hand-object segmentation than [100DoH](https://github.com/ddshan/hand_object_detectorc) + [Semantic-SAM](https://github.com/UX-Decoder/Semantic-SAM) pipeline. I have also provided a wrapper of EgoHOS in ``ego_hos_wrapper.py``.
 
 First install EgoHOS from the official repository, than run the code below for segmentation:
 
@@ -120,4 +120,4 @@ The struction of ``seg_result`` is a dict (e.g. dict_keys(['left_hand', 'left_ob
 
 ## Acknowledgements
 
-This repository is based on the code from [100DoH](https://github.com/ddshan/hand_object_detector), [Semantic-SAM](https://github.com/UX-Decoder/Semantic-SAM), [General-Flow](https://github.com/michaelyuancb/general_flow) and [Deformable-DETR](https://github.com/fundamentalvision/Deformable-DETR). Thanks a lot : )
+This repository is based on the code from [100DoH](https://github.com/ddshan/hand_object_detector), [Semantic-SAM](https://github.com/UX-Decoder/Semantic-SAM), [EgoHOS](https://github.com/owenzlz/EgoHOS), [General-Flow](https://github.com/michaelyuancb/general_flow) and [Deformable-DETR](https://github.com/fundamentalvision/Deformable-DETR). Thanks a lot : )
