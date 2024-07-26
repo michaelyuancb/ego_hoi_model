@@ -15,9 +15,6 @@ ego_hos_wrapper = EgoHOSWrapper(cache_path="/home/ycb/dflowmap_project/dflowmap/
                                 repo_path='../repo')
 seg_hands, seg_obj2, seg_cb = ego_hos_wrapper.segment(image_fp, vis=True)  # "cb" is contact boundary
 ```
-
-If you install mmcv with version ``2.x`` rather than 1.6.0 from the original EgoHOS repository, you may need to replace ``EgoHOS/mmsegmentation/mmseg/apis/inference.py`` with ``ego_hos_inference.py`` I provided.
-
 ![cover](media/egohos.png "egohos")
 
 ## Introduction
