@@ -4,7 +4,7 @@ import torch
 import numpy as np
 from torchvision.transforms.functional import to_tensor
 import mmcv
-from mmcv.runner import load_checkpoint
+from mmengine.runner import load_checkpoint
 from mmseg.datasets.pipelines import Compose
 from mmseg.models import build_segmentor
 
