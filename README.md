@@ -17,6 +17,13 @@ seg_hands, seg_obj2, seg_cb = ego_hos_wrapper.segment(image_fp, vis=True)  # "cb
 ```
 ![cover](media/egohos.png "egohos")
 
+You may find some issue with the version of torch and mmcv library. You could directly ignore the official suggestion and install the recent version of torch and mmcv (e.g. torch==2.0.1 and mmcv==1.7.2). You may also need to delete the version limitation of the original code (Lin58~60 in __init__.py). If you meet the problem ``MultiScaleDeformableAttention Module is not Found`` in the later process, you may solved it as below:
+
+```
+cd ops
+./make.sh
+```
+
 ## Introduction
 
 This repository is a pipeline for hand object interaction (HOI) analysis, which includes: 
